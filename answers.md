@@ -30,6 +30,7 @@ public static boolean arePermutations(int[] arr1, int[] arr2) {
 
 
 
+
 3. 
 Suppose that the initial contents of the values array in Shuffler.java are {1, 2, 3, 4}.
 For what sequence of random integers would the efficient selection shuffle change values to
@@ -50,6 +51,7 @@ if you start with an array of values {1, 2, 3, 4}, there are actually many ways 
 ```
 
 0101
+
 after the 01, the values are already 4321, so the 01 is just there to preserve it
 
 
@@ -69,6 +71,7 @@ heres another way:
 ```
 
 2133
+
 the first move is just random, but after that you just choose the index of whichever number
 needs to be at the current spot
 
@@ -87,6 +90,8 @@ I'll use the same method again:
         ^    
         4 3 2 1
 ```
+
+1333
 
 I just chose a random index to start off with, 1, then I swapped the current index with the
 index of whatever number should be at the current index
