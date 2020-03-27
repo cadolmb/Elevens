@@ -37,6 +37,7 @@ contain {4, 3, 2, 1}?
 
 if you start with an array of values {1, 2, 3, 4}, there are actually many ways to end up with to end up with {4, 3, 2, 1} with a sequence of four swaps:
 
+```
 0       1 2 3 4
               ^
 1       4 2 3 1
@@ -46,6 +47,7 @@ if you start with an array of values {1, 2, 3, 4}, there are actually many ways 
 1       3 4 2 1
         ^    
         4 3 2 1
+```
 
 0101
 after the 01, the values are already 4321, so the 01 is just there to preserve it
@@ -54,6 +56,7 @@ after the 01, the values are already 4321, so the 01 is just there to preserve i
 
 heres another way:
 
+```
 2       1 2 3 4
               ^
 1       1 2 4 3
@@ -63,6 +66,7 @@ heres another way:
 3       1 3 2 4
         ^    
         4 3 2 1
+```
 
 2133
 the first move is just random, but after that you just choose the index of whichever number
@@ -72,6 +76,7 @@ needs to be at the current spot
 
 I'll use the same method again:
 
+```
 1       1 2 3 4
               ^
 3       1 4 3 2
@@ -81,6 +86,7 @@ I'll use the same method again:
 3       1 3 2 4
         ^    
         4 3 2 1
+```
 
 I just chose a random index to start off with, 1, then I swapped the current index with the
 index of whatever number should be at the current index
